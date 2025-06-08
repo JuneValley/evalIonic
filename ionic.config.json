@@ -1,0 +1,7 @@
+{
+  "name": "evalIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
