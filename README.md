@@ -17,5 +17,6 @@ Ceci comprend :
 
 Pour installer Product Manager, suivez les étapes suivantes : 
 - clonez ce dépôt dans un dossier dédié ⬇️
+- exécutez la commande *git checkout master* pour récupérer le code source </>
 - exécutez la commande *ionic serve -o* pour lancer le serveur web de développement 🌐
 - pour lancer l'application sur un terminal Android, exécutez les commandes *npx cap copy* et *npx cap open android* ce qui va compiler l'application pour Android et ouvrir Android Studio ✅
