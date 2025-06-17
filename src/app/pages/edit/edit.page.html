@@ -1,0 +1,24 @@
+<ion-content [fullscreen]="true">
+  <ion-title>Modifier un produit</ion-title>
+
+  <ion-button (click)="delete()">Supprimer le produit ❌</ion-button>
+
+  <form [formGroup]="form">
+    <ion-input formControlName="name" label="Nom du produit"></ion-input>
+    <ion-input formControlName="price" type="number" label="Prix du produit"></ion-input>
+
+    <ion-select formControlName="type" value="{{form.controls.type.value}}" label="Type du produit">
+      <ion-select-option value="0">Livre</ion-select-option>
+      <ion-select-option value="1">Jouet</ion-select-option>
+      <ion-select-option value="2">Jeu</ion-select-option>
+      <ion-select-option value="3">Instrument</ion-select-option>
+      <ion-select-option value="4">Électroménager</ion-select-option>
+      <ion-select-option value="5">Autre</ion-select-option>
+    </ion-select>
+  </form>
+
+  <ion-button (click)="takePhoto()">Prendre une photo</ion-button>
+  <img [src]="photo">
+
+  <ion-button (click)="submit()">Valider</ion-button>
+</ion-content>

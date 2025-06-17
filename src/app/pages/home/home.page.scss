@@ -25,3 +25,14 @@
 #container a {
   text-decoration: none;
 }
+
+ion-list {
+  padding-top: 50px;
+  height: 100vh;
+  overflow: auto;
+}
+
+ion-card-content {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,3 +1,15 @@
 <ion-app>
+  <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title (click)="home()">
+      Product Manager
+    </ion-title>
+    <ion-buttons slot="end">
+    <ion-button (click)="new()">
+      Nouveau Produit ➕
+    </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
   <ion-router-outlet></ion-router-outlet>
 </ion-app>

@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-list>
+      @for (product of products; track $index) {
+      <ion-item>
+        <ion-card>
+          <img [src]="product.photo"/>
+          <ion-card-header>
+            <ion-card-title>{{product.name}}</ion-card-title>
+            <ion-card-subtitle>{{product.type}}</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            Prix : {{product.price}} €
+          </ion-card-content>
+          <ion-button (click)="edit(product.id)">✏️</ion-button>
+        </ion-card>
+      </ion-item>
+      }
+    </ion-list>
+  </div>
+</ion-content>
